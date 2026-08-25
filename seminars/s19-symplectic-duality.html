@@ -1,0 +1,406 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Learning Seminar on Symplectic Duality (Spring 2019) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../research/">Research</a></li>
+	  <li><a href="../notes/">Notes/writing</a></li>
+	  <li><a href="../teaching/">Teaching</a></li>
+          <li><a href="./"><strong>Seminars</strong></a>
+            <ul>
+              <li><a href="s21-rep-theory/">(S21) Modern Techniques in Representation Theory</a></li>
+              <li><a href="s20-category-o.html">(S20) Things I should know about category O but I don't</li>
+              <li><a href="f19-conformal-field-theory.html">(F19) Learning seminar on conformal field theory</a></li>
+              <li>(S19) Learning seminar on symplectic duality</li>
+              <li><a href="f18-enumerative-geometry.html">(F18) Enumerative geometry seminar</a></li>
+              <li><a href="./">earlier...</a></li>
+            </ul>
+          </li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Learning Seminar on Symplectic Duality (Spring 2019)</h2>
+
+      <p>The goal of this seminar is to understand various aspects of
+      symplectic duality from a mathematical perspective.</p>
+
+      <ul>
+        <li>Organizer: <a href="../">Henry Liu</a></li>
+        <li>Time/date: Thursdays 2:40-3:55pm</li>
+        <li>Location: Math 622</li>
+      </ul>
+
+      <p>I am live-TeXing notes for this seminar, available <a href="../notes/s19-sem-sympl-duality.pdf">here</a>.</p>
+
+      <p>Please email me at <a id="email">hliu at math dot columbia dot edu</a> if you would like to be on the mailing list.</p>
+      <script>
+        email = document.getElementById("email").innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("email").setAttribute("href", "mailto:" + email);
+      </script>
+
+      <h3>Possible topics and references</h3>
+
+      <p>In physics, symplectic duality is a conjectural
+        correspondence between 3d N=4 supersymmetric gauge theories
+        \(X\) and \(X^\vee\). There are many aspects of this
+        correspondence which have been formalized mathematically in
+        varying levels of generality. The earliest (physics) papers
+        describing the duality and providing examples seem to be:</p>
+      <ul>
+        <li>
+          <a href="https://arxiv.org/abs/hep-th/9607207">[IS96]</a>
+          <cite>Mirror Symmetry in Three Dimensional Gauge Theories</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/hep-th/9611063">[dBHOO96]</a>
+          <cite>Mirror Symmetry in Three-Dimensional Gauge Theories,
+            Quivers and D-branes</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/hep-th/9612131">[dBHOOY96]</a>
+          <cite>Mirror Symmetry in Three-Dimensional Gauge Theories,
+            SL(2,Z) and D-Brane Moduli Spaces</cite>.
+        </li>
+      </ul>
+      <p>Mathematically, a very explicit and combinatorial case is
+        that of hypertoric varieties. Here symplectic duality is Gale
+        duality. The following papers explain how to associate a
+        category \(\mathcal{O}\) to a hypertoric variety, and later
+        conical symplectic resolutions in general, and how Gale dual
+        pairs give Koszul dual categories:</p>
+      <ul>
+        <li>
+          <a href="https://arxiv.org/abs/0806.3256">[BLPW10]</a>
+          <cite>Gale duality and Koszul duality</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1010.2001">[BLPW12]</a>
+          <cite>Hypertoric category O</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1407.0964">[BLPW14]</a>
+          <cite>Quantizations of conical symplectic resolutions II:
+            category \(\mathcal{O}\) and symplectic
+            duality</cite>.
+        </li>
+      </ul>
+      <p>The Koszul duality part of the story is explained in the
+        classical paper:</p>
+      <ul>
+        <li>
+          <a href="https://www.jstor.org/stable/2152867">[BGS96]</a>
+          <cite>Koszul Duality Patterns in Representation Theory</cite>.
+        </li>
+      </ul>
+
+      <p>In general, symplectic duality exchanges the Higgs and
+      Coulomb branches of \(X\) and \(X^\vee\). These are moduli
+      spaces associated to the gauge theories. For example, in the
+      hypertoric case, Gale dual hypertoric varieties form a
+      Higgs/Coulomb pair. More generally, for gauge theories
+      associated to a quiver, the Higgs branch is the associated
+      Nakajima quiver variety. When the quiver is of ADE type, quiver
+      varieties have interpretations as moduli of instantons on ADE
+      surfaces via a generalized ADHM construction:</p>
+      <ul>
+        <li>
+          <a href="https://eudml.org/doc/164736">[KN90]</a>
+          <cite>Yang-Mills instantons on ALE gravitational instantons</cite>
+        </li>
+        <li>
+          <a href="https://projecteuclid.org/euclid.dmj/1077286968">[Nak94]</a>
+          <cite>Instantons on ALE spaces, quiver varieties, and
+            Kac-Moody algebras</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1801.06286">[Nak18]</a>
+          <cite>Instantons on ALE spaces for classical groups</cite>.
+        </li>
+      </ul>
+      <p>For type A quivers, the Higgs branch of \(X^\vee\) (i.e. the
+      Coulomb branch of \(X\)) is also a quiver variety of type A.
+      Classically, symplectic duality in this case reduces to
+      level-rank duality. The enumerative geometries, in the form of
+      quantum K-theory, of the Higgs branches of \(X\) and \(X^\vee\)
+      are expected to match. This can actually be explicitly checked
+      for hypertoric varieties, and indirectly checked in general by
+      matching monodromies of q-difference equations (up to gauge
+      equivalence):</p>
+      <ul>
+        <li>
+          <a href="okounkov-hypertoric-quasimaps.pdf">[Onotes1]</a>
+          <a href="okounkov-hypertoric-qde.pdf">[Onotes2]</a>
+          (generously shared
+          by <a href="http://math.columbia.edu/~okounkov/">Andrei
+            Okounkov</a>)<br/>Notes on quasimaps to hypertoric varieties,
+          and matching their q-difference equations
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1604.00423">[AO16]</a>
+          <cite>Elliptic stable envelopes</cite>.
+        </li>
+      </ul>
+
+      <p>The Coulomb branch is more complicated than the Higgs branch.
+      Physically, the moduli space is \((\mathbb{R}^3 \times S^1)^r\)
+      classically but its metric receives quantum corrections, making
+      a mathematical construction difficult. Only recently was such a
+      construction proposed:</p>
+      <ul>
+        <li>
+          <a href="https://arxiv.org/abs/1503.03676">[Nak16a]</a>
+          <cite>Towards a mathematical definition of Coulomb
+            branches of 3-dimensional \(\mathcal{N}=4\) gauge
+            theories, I</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1601.03586">[BFN16a]</a>
+          <cite>Towards a mathematical definition of Coulomb
+            branches of 3-dimensional \(\mathcal{N}=4\) gauge
+            theories, II</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1604.03625">[BFN16b]</a>
+          <cite>Coulomb branches of 3d \(\mathcal{N}=4\) quiver gauge
+          theories and slices in the affine Grassmannian</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1510.03908">[Nak15]</a>
+          <cite>Questions on provisional Coulomb branches of
+            3-dimensional \(\mathcal{N}=4\) gauge theories</cite>.
+        </li>
+      </ul>
+      <p>There are also excellent surveys of the construction, with
+      emphasis on different aspects of the story:</p>
+      <ul>
+        <li>
+          <a href="https://arxiv.org/abs/1706.05154">[Nak16b]</a>
+          <cite>Introduction to a provisional mathematical
+            definition of Coulomb branches of 3-dimensional
+            \(\mathcal{N}=4\) gauge theories</cite>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/1807.09038">[BF18]</a>
+          <cite>Coulomb branches of 3-dimensional gauge theories and
+            related structures</cite>.
+        </li>
+      </ul>
+      <p>The monopole formula plays a big role in formulating such a
+      construction. Originating from physics, it is a combinatorial
+      formula for what the Hilbert series of the Coulomb branch should
+      be. Many examples are given in the original (physics) paper:</p>
+      <ul>
+        <li>
+          <a href="https://arxiv.org/abs/1309.2657">[CHZ14]</a>
+          <cite>Monopole operators and Hilbert series of Coulomb
+            branches of 3d \(\mathcal{N}=4\) gauge theories</cite>.
+        </li>
+      </ul>
+
+      <h3>Schedule</h3>
+
+      <table>
+        <colgroup>
+          <col span="1" style="width: 75px;">
+          <col span="1">
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <td>Thurs Feb 07</td>
+            <td>
+              Sam DeHority<br/>
+              <cite>Moduli spaces of instantons, quiver varieties and ALE spaces</cite><br/><br/>
+              
+              Instantons are solutions to physical equations which are confined to a particular region of spacetime. Moduli spaces of instantons are extremely important in physics and mathematics, and can be described exactly in a number of cases. This talk will discuss examples of these moduli spaces, focusing on instantons on ALE spaces, which are ADE surfaces with particular hyperkahler metrics. These moduli spaces are constructed as Nakajima quiver varieites, and also come with hyperkahler metrics.<br/><br/>
+              
+              References: <a href="https://eudml.org/doc/164736">[KN90]</a>, <a href="https://projecteuclid.org/euclid.dmj/1077286968">[Nak94]</a>,
+              Donaldson-Kronheimer <cite>The Geometry of
+              Four-Manifolds</cite>.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Feb 14</td>
+            <td>
+              Semon Rezchikov<br/>
+              <cite>Hypertoric Varieties and Hyperplane Arrangements</cite><br/><br/>
+              
+              To a (suitably decorated) arrangement of hyperplanes in R^n and a choice of covector, one can associate a pair of combinatorially defined algebras A and B. When the hyperplanes are defined over Q, these algebras have geometric interpretations in terms of certain hypertoric varieties associated to the hyperplane arrangement. Gale duality, a certain operation on hyperplane-arrangements-with-covectors that is related to linear progamming, gives rise to a certain duality between the algebras A and B. This is supposed to be an instance of symplectic duality. We will give a leisurely and example-focused tour through some part of this construction.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/0806.3256">[BLPW10]</a>, Proudfoot <cite><a href="https://arxiv.org/abs/0705.4236">A survey of hypertoric geometry and topology</a></cite>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Feb 21</td>
+            <td>
+              Yakov Kononov<br/>
+              <cite>Some physics underlying symplectic duality</cite><br/><br/>
+              
+              I will say some physics words and then answer all of your questions.<br/><br/>
+              
+              References:
+              <ul>
+                <li>Seiberg and Witten, <cite><a href="https://arxiv.org/abs/hep-th/9607163">Gauge Dynamics And Compactification To Three Dimensions</a></cite></li>
+                <li>Bullimore, Dimofte, and Gaiotto, <cite><a href="https://arxiv.org/abs/1503.04817">The Coulomb Branch of 3d \(\mathcal{N}=4\) Theories</a></cite></li>
+                <li>Bullimore, Dimofte, Gaiotto, and Hilburn, <cite><a href="https://arxiv.org/abs/1603.08382">Boundaries, Mirror Symmetry, and Symplectic Duality in 3d N=4 Gauge Theory</a></cite></li>
+                <li>Bullimore, Ferrari, and Kim, <cite><a href="https://arxiv.org/abs/1812.05567">Twisted Indices of 3d \(\mathcal{N}=4\) Gauge Theories and Enumerative Geometry of Quasi-Maps</a></cite></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Feb 28</td>
+            <td>
+              Shuai Wang<br/>
+              <cite>Koszul duality in representation theory</cite><br/><br/>
+              
+              We start from the classical Koszul duality between exterior algebra and symmetric algebra. After introducing necessary notations such as Koszul rings, Category O and perverse sheaves etc, we discuss one incarnation of Koszul duality in representation theory: the parabolic-singular duality.<br/><br/>
+              
+              References: <a href="https://www.jstor.org/stable/2152867">[BGS96]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Mar 07</td>
+            <td>
+              Henry Liu<br/>
+              <cite>Deformation and quantization of symplectic resolutions</cite><br/><br/>
+              
+              Symplectic resolutions are a rich class of varieties. Many constructions in classical Lie theory (e.g. Weyl group, quantization, category O) can be generalized to symplectic resolutions. We'll start with some examples, and then discuss deformations and quantizations in general.<br/><br/>
+              
+              References:
+              <ul>
+                <li>Kaledin, <cite><a href="https://arxiv.org/abs/math/0608143">Geometry and topology of symplectic resolutions</a></cite></li>
+                <li>Losev, <cite><a href="https://arxiv.org/abs/1010.3182">Isomorphisms of quantizations via quantization of resolutions</a></cite></li>
+                <li>Namikawa, <cite><a href="https://arxiv.org/abs/0902.2832">Poisson deformations of affine symplectic varieties II</a></cite></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Mar 14</td>
+            <td>
+              Shotaro Makisumi<br/>
+              <cite>Quantizations of conical symplectic resolutions I</cite><br/><br/>
+              
+              In preparation for symplectic duality for conical symplectic resolutions, we will discuss (derived) localization and twisting functors in this context following Braden-Proudfoot-Webster and Braden-Licata-Proudfoot-Webster.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/1010.2001">[BLPW12]</a>, <a href="https://arxiv.org/abs/1208.3863">[BPW12]</a>, <a href="https://arxiv.org/abs/1407.0964">[BLPW14]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Mar 21</td>
+            <td>
+              <strong>No meeting</strong> (spring break)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Mar 28</td>
+            <td>
+              Shotaro Makisumi<br/>
+              <cite>Quantizations of conical symplectic resolutions II</cite><br/><br/>
+              
+              We will discuss symplectic duality for the category O of conical symplectic resolutions as conjectured by Braden-Licata-Proudfoot-Webster. In particular, we will define category O and discuss twisting and shuffling functors, concentrating on the example of hypertoric category O.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/0806.3256">[BLPW10]</a>, <a href="https://arxiv.org/abs/1010.2001">[BLPW12]</a>, <a href="https://arxiv.org/abs/1407.0964">[BLPW14]</a>, <a href="https://pages.uoregon.edu/belias/WARTHOG/symplectic/index.html">[WARTHOG]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Apr 04</td>
+            <td>
+              Ivan Danilenko<br/>
+              <cite>Affine Grassmannians</cite><br/><br/>
+              
+              We'll cover basic facts about Affine Grassmannians such as Poisson structure, Schubert cells, convolutions, transversal slices. We'll need it later in a talk on Braverman-Finkelberg-Nakajima approach to Coulomb branches.<br/><br/>
+
+              References:
+              <ul>
+                <li>Ginzburg, <a href="https://arxiv.org/abs/alg-geom/9511007">Perverse sheaves on a Loop group and Langlands' duality</a></li>
+                <li>Mirkovic and Vilonen, <a href="https://arxiv.org/abs/math/0401222">Geometric Langlands duality and representations of algebraic groups over commutative rings</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Apr 11</td>
+            <td>
+              Gus Schrader<br/>
+              <cite>Introduction to BFN spaces</cite><br/><br/>
+              
+              In a recent series of papers, Braverman, Finkelberg and Nakajima have given a mathematical definition of the Coulomb branch of a 3d N=4 gauge theory of cotangent type. These Coulomb branches are affine Poisson varieties that come equipped with a canonical integrable system and natural quantization of their ring of functions. I'll give an overview of the construction of these Coulomb branches and their main properties, and comment on the role they play in the context of symplectic duality.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/1601.03586">[BFN16a]</a>, <a href="https://arxiv.org/abs/1604.03625">[BFN16b]</a>, <a href="https://arxiv.org/abs/1807.09038">[BF18]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Apr 18</td>
+            <td>
+              Gus Schrader<br/>
+              <cite>More on BFN spaces</cite><br/><br/>
+              
+              Picking up where we left off last week, we'll go over some of the key features of the Coulomb branch algebras constructed by Braverman, Finkelberg and Nakajima, including their canonical integrable systems and the very useful localization formula for monopole operators corresponding to minuscule coweights. We'll illustrate these structures via some familiar examples of Coulomb branches for quiver gauge theories.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/1601.03586">[BFN16a]</a>, <a href="https://arxiv.org/abs/1604.03625">[BFN16b]</a>, <a href="https://arxiv.org/abs/1807.09038">[BF18]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Apr 25</td>
+            <td>
+              Andrei Okounkov<br/>
+              <cite>Monodromy, pole subtraction, and elliptic cohomology</cite><br/><br/>
+              
+              This will be an introductory seminar about q-difference equations and their monodromy. For q-difference equations of enumerative geometry origin, there are geometric tools to control their monodromy that will be illustrated in some basic examples.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs May 02</td>
+            <td>
+              <strong>No meeting</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs May 09</td>
+            <td>
+              Zijun Zhou<br/>
+              <cite>3d mirror symmetry and elliptic stable envelopes for \(T^*\mathrm{Gr}(k,n)\)</cite><br/><br/>
+              
+              This will be an informal Q&amp;A session, as a follow-up to <a href="http://www.math.columbia.edu/~ccliu/Seminars/Zhou190507.html">the talk</a> in the <a href="http://www.math.columbia.edu/~ccliu/Seminars/EG_S19.html">enumerative geometry seminar</a>.<br/><br/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </article>
+  </div>
+</body>
+</html>

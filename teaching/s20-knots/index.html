@@ -1,0 +1,318 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Undergraduate seminar: knot theory (Spring 2020) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../../research/">Research</a></li>
+	  <li><a href="../../notes/">Notes/writing</a></li>
+	  <li><a href="../"><strong>Teaching</strong></a>
+            <ul>
+              <li><a href="../s22-k-theory/">(S22) Equivariant K-theory</a></li>
+              <li>(S20) Undergrad seminar on knot theory</li>
+              <li><a href="../ss19-ode/">(SS19) Ordinary differential equations</a></li>
+              <li><a href="../s19-calc1/">(S19) Calculus I</a></li>
+              <li><a href="../../shp/">(SHP) Representation theory and physics</a></li>
+              <li><a href="../../shp/geometry-and-topology.html">(SHP) Geometry and topology</a></li>
+            </ul>
+          </li>
+          <li><a href="../../seminars/">Seminars</a></li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Undergraduate seminar on knot theory: MATH UN3952 (Spring 2020)</h2>
+
+      <ul>
+        <li>Meetings: Tuesdays 5:40-7:25pm, <strong>Hamilton 503</strong></li>
+        <li>Section leader: <a href="../../">Henry Liu</a>
+          (<a id="email">hliu at math dot columbia dot edu</a>)</li>
+        <li>Course coordinator: Daniele Alessandrini</li>
+      </ul>
+      <script>
+        function humanize(id){
+        email = document.getElementById(id).innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById(id).innerHTML = email;
+        document.getElementById(id).setAttribute("href", "mailto:" + email);
+        }
+        humanize("email");
+      </script>
+
+      <p>
+        <strong>The remainder of this seminar will
+        be <a href="https://columbiauniversity.zoom.us/j/270986721">online
+        via Zoom</a>.</strong>
+      </p>
+
+      <p>
+        The goal of this seminar is to explore knot invariants, both
+        modern and traditional. Knots and related subjects play a deep
+        role in modern mathematical physics. Specific topics will be
+        chosen based on participant interest, but the first few weeks
+        will be an introduction to the general theory of knots. Our
+        focus will be more conceptual and computational than
+        technical.
+      </p>
+      
+      <p>
+        Content aside, this seminar will also hopefully be a good
+        training ground for how to give and how to learn from
+        mathematical talks. Grades-wise, participation and good
+        communication will be just as important as the mathematics.
+      </p>
+
+      <h3>Grading policy</h3>
+
+      <p>
+        Your grade will be based on participation as an audience
+        member and as a speaker. Audience members are expected to
+        support the speakers by asking good questions and giving
+        constructive comments. Speakers are expected to give lucid,
+        cohesive, and engaging presentations.
+      </p>
+
+      <p>
+        At the end of every meeting, please submit to me something (in
+        any form) with your name and three big/interesting ideas you
+        learned from each talk, in your own words. This will serve as
+        an attendance record (for grading) and also as encouragement
+        for you to synthesize what you are hearing from the talk.
+      </p>
+
+      <h3>Topics and references</h3>
+
+      <p>
+        Our main references for the fundamentals of knots will be the
+        following books. They are listed in order of increasing
+        mathematical sophistication.
+      </p>
+
+      <ul>
+        <li>[A] C. Adams, <cite>The Knot Book</cite></li>
+        <li>[L1] C. Livingston, <cite>Knot Theory</cite></li>
+        <li>[L2] W. B. R. Lickorish, <cite>An Introduction to Knot
+        Theory</cite></li>
+      </ul>
+
+      <p>
+        Good, pedagogical introductions to the basics of knot theory
+        are: chapters 1-6 of [A], chapters 2-4 of [L1], and chapters
+        1-2 of [L2].
+      </p>
+
+      <p>
+        The Jones polynomial and related polynomial invariants are
+        discussed in: chapter 6 of [A], chapter 10 of [L1], and
+        chapters 3, 6, and 8 of [L2]. Different perspectives on the
+        Jones polynomial are introduced well in part I of [K]:
+      </p>
+
+      <ul>
+        <li>[K] L. Kauffman, <cite>Knots and Physics</cite></li>
+      </ul>
+
+      <p>
+        Here are some interesting topics for talks. Those of you who
+        have not signed up for a topic yet, please pick from one of
+        the following or, even better, suggest your own. For most
+        topics, I have listed some suggested references; feel free to
+        use other sources.
+      </p>
+
+      <ul>
+        <li>Temperley-Lieb algebra and the original definition of the Jones polynomial ([K] &sect; 7, [L2] &sect;&sect; 13-14)</li>
+        <li>Knot polynomials as quantum group invariants ([K] &sect;&sect; I.8-11)</li>
+        <li>Knot/link homology (categorification)</li>
+        <li>Vassiliev (finite type) invariants</li>
+        <li>Anything we haven't covered in [A], [L1], [L2], and [K]. For one-person topics, [K] is especially good.</li>
+      </ul>
+
+      <h3>Schedule</h3>
+
+      <p>
+        Each individual talk should take approximately 50 minutes.
+        Email me a title, a short description, and any relevant
+        references for your talk a few days before the date of your
+        talk.
+      </p>
+
+      <p>
+        If you want to sign up for, confirm, or cancel a talk
+        for a particular date/topic, please ensure that I am aware of
+        the change at least <strong>one week</strong> in advance.
+      </p>
+
+      <table>
+        <colgroup>
+          <col span="1" style="width: 75px;">
+          <col span="1">
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <td><strong>Thurs</strong> Jan 30</td>
+            <td>
+              <strong>Organizational meeting</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Feb 04</td>
+            <td>
+              Alaedine Belhouari and Nouhaila El Majidi<br/>
+              <cite>An Introduction</cite><br/><br/>
+              
+              References: [A] &sect;&sect; 1-2 and [L1] &sect;&sect; 1-2.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Feb 11</td>
+            <td>
+              Alaedine Belhouari and Nouhaila El Majidi<br/>
+              <cite>An Introduction</cite> (cont'd)<br/><br/>
+              References: [A] &sect;&sect; 1-2 and [L1] &sect;&sect; 1-2.
+              <hr style="margin:8px 0 8px"/>
+              Julian Christensen<br/>
+              <cite>Representations of Knots</cite><br/><br/>
+              References: [A] &sect;&sect; 2.2, 2.4, 4.1
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Feb 18</td>
+            <td>
+              Daniel Ortega-Venni<br/>
+              <cite>Characterizing Knots Through Numbers and Colors</cite><br/><br/>
+              References: [A] &sect;&sect; 2.3 and 3, [L1] &sect; 3.2
+              <hr style="margin:8px 0 8px"/>
+              Sara Bousleiman and Yuri Hayashi<br/>
+              <br/>
+              References: [A] &sect;&sect; 3-4 and [L1] &sect;&sect; 3-4, 7
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Feb 25</td>
+            <td>
+              Sara Bousleiman and Yuri Hayashi<br/>
+              <br/>
+              References: [A] &sect;&sect; 3-4 and [L1] &sect;&sect; 3-4, 7
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Mar 03</td>
+            <td>
+              Abdoulaye Diallo and Rohan Sukhdeo<br/>
+              <br/>
+              References: [A] &sect;&sect; 4.3, 6.1
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Mar 10</td>
+            <td>
+              <strong>Class canceled</strong> (university-wide)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Mar 17</td>
+            <td>
+              <strong>Spring break</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Mar 24</td>
+            <td>
+              <strong>Class canceled</strong> (university-wide)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Mar 31</td>
+            <td>
+              Cynthia Mao<br/><br/>
+
+              References: [A] &sect; 6, [L1] &sect; 10, [L2] &sect; 3, [K] &sect;&sect; I.1-5
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Apr 07</td>
+            <td>
+              Elias Romero<br/>
+              <cite>Colors, Brackets, Tangles, and Nature</cite><br/><br/>
+              
+              References: [A] &sect;&sect; 7.4-8.3, [K] &sect;&sect; II.7-8
+              <hr style="margin:8px 0 8px"/>
+              Ryan Eppolito<br/>
+              <cite>The concordance group</cite><br/><br/>
+              
+              References: Arunima Ray, <a href="http://people.mpim-bonn.mpg.de/aruray/documents/slides/geneseo2.pdf">Knots, four dimensions, and fractals</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Apr 14</td>
+            <td>
+              Larry Hong and Joon Young Kang<br/><br/>
+              
+              References: [A] &sect; 7.1
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Apr 21</td>
+            <td>
+              Zeina Laban<br/>
+              <cite>Knot Theory in Quantum Cryptography</cite><br/><br/>
+              
+              References: Marzuoli and Palumbo, <a href="https://arxiv.org/abs/1010.2055"><cite>Post Quantum Cryptography from Mutant Prime Knots</cite></a>
+              <hr style="margin:8px 0 8px"/>
+              Ben Brimacombe<br/>
+              <cite>Deciding Knot</cite><br/><br/>
+              
+              References: Koenig and Tsvietkova, <a href="https://arxiv.org/abs/1809.10334"><cite>NP-hard problems naturally arising in knot theory</cite></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Apr 28</td>
+            <td>
+              Aaron Zheng<br/>
+              <cite>Types of Knots</cite><br/><br/>
+              
+              References: [A] &sect; 5
+              <hr style="margin:8px 0 8px"/>
+              Gal Polani<br/>
+              <cite>Title: TBA</cite><br/><br/>
+              
+              References: [K] &sect;&sect; I.8-11
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </article>
+  </div>
+</body>

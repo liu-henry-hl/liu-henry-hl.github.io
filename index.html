@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="./">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="research/">Research</a></li>
+	  <li><a href="notes/">Notes/writing</a></li>
+	  <li><a href="teaching/">Teaching</a></li>
+          <li><a href="seminars/">Seminars</a></li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Hello World!</h2>
+
+      <p>I am currently at <a href="https://www.ipmu.jp/">Kavli
+        IPMU</a> as a Project Researcher.</p>
+
+      <p>From 2021-2023, I was a Postdoctoral Research Associate at
+        the <a href="https://www.maths.ox.ac.uk/">Mathematical
+        Institute</a> of the University of Oxford, working
+        with <a href="https://people.maths.ox.ac.uk/joyce/">Dominic
+        Joyce</a>.</p>
+
+      <p>I finished my PhD
+        in <a href="https://math.columbia.edu/">mathematics</a> in May
+        2021 at <a href="https://www.columbia.edu/">Columbia
+        University</a>. where my advisor
+        was <a href="http://www.math.columbia.edu/~okounkov/">Andrei
+        Okounkov</a>. Before that, I was an undergraduate student at
+        the <a href="https://uwaterloo.ca/">University of
+        Waterloo</a>, where I majored
+        in <a href="https://cs.uwaterloo.ca/">Computer Science</a>
+        and <a href="https://math.uwaterloo.ca/pure-mathematics/">Pure
+        Mathematics</a>.</p>
+
+      <p>My legal name is Liu Huaxin (刘华昕), but I have gone by
+        Henry since I was very little.</p>
+
+      <h3>Contact</h3>
+
+      <p>Email: <a id="email">henry <small>(dot)</small> liu <small>(at)</small> ipmu <small>(dot)</small> jp</a>.</p>
+      <script>
+        email = document.getElementById("email").innerHTML;
+        email = email.replace(/ <small>\(at\)<\/small> /g, "@");
+        email = email.replace(/ <small>\(dot\)<\/small> /g, ".");
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("email").setAttribute("href", "mailto:" + email);
+      </script>
+
+      <p>Last updated: 02 Jan 2026</p>
+
+    </article>
+  </div>
+</body>
+</html>

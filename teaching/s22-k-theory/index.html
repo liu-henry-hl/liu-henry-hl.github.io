@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Equivariant K-theory (Summer 2022) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../../styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../../research/">Research</a></li>
+	  <li><a href="../../notes/">Notes/writing</a></li>
+	  <li><a href="../"><strong>Teaching</strong></a>
+            <ul>
+              <li>(S22) Equivariant K-theory</li>
+              <li><a href="../s20-knots/">(S20) Undergrad seminar on knot theory</a></li>
+              <li><a href="../ss19-ode/">(SS19) Ordinary differential equations</a></li>
+              <li><a href="../s19-calc1/">(S19) Calculus I</a></li>
+              <li><a href="../../shp/">(SHP) Representation theory and physics</a></li>
+              <li><a href="../../shp/geometry-and-topology.html">(SHP) Geometry and topology</a></li>
+            </ul>
+          </li>
+          <li><a href="../../seminars/">Seminars</a></li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Equivariant K-theory (TCC, Trinity 2022)</h2>
+
+      <ul>
+        <li>Classes: Mondays/Thursdays 4pm-5pm BST (GMT+1)</li>
+        <li>Duration: 8 weeks, from April 25 to June 13</li>
+        <li>Location: on MS Teams via the <a href="https://www.maths.ox.ac.uk/groups/tcc">Taught Course Center</a></li>
+        <li>Instructor: <a href="../../">Henry Liu</a> (<a id="email">liu at maths dot ox dot ac dot uk</a>)</li>
+      </ul>
+
+      <p>The course will be informal and questions/discussions are encouraged. Notes will be uploaded after each class (links in the schedule below). If your institution is not part of the TCC network but you would like to attend the course, please email me.</p>
+      <script>
+        function humanize(id){
+        email = document.getElementById(id).innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById(id).innerHTML = email;
+        document.getElementById(id).setAttribute("href", "mailto:" + email);
+        }
+        humanize("email");
+      </script>
+
+      <h3>Overview</h3>
+
+      <p>K-theory \(K(X)\) is a kind of cohomology theory which deals with sheaves and vector bundles on \(X\), and equivariance keeps track of any relevant symmetries \(\mathsf{G}\) of \(X\). Taken together, equivariant K-theory \(K_{\mathsf{G}}(X)\) merges aspects of both the ordinary cohomology of \(X\) and the representation theory of \(\mathsf{G}\). It is a productive setting for many geometric problems, e.g. deformation theory and modern enumerative geometry.</p>
+
+      <p>In the first half of this course, we introduce equivariant (algebraic) K-theory as a functor and focus on how to use K-theoretic tools to do concrete, explicit computations (on toric varieties, flag manifolds, etc.) These computations are perhaps conceptually simpler than their cohomological analogues; sheaves and vector bundles tend to be more natural than their characteristic classes. Along the way we also zoom out and discuss K-theory abstractly as a cohomology theory and its relation to its little sibling, ordinary cohomology, and its bigger sibling, elliptic cohomology.</p>
+
+      <p>In the second half of this course, we highlight some major advances of the last few decades that use equivariant K-theory in a crucial way. (See the schedule below for details.)</p>
+
+      <h3>Prerequisites</h3>
+
+      <p>I will assume some background knowledge in:</p>
+
+      <ul>
+        <li>algebraic geometry (at the level of Hartshorne), e.g. an understanding of algebraic varieties, sheaves and vector bundles, sheaf cohomology and derived functors;</li>
+        <li>representation theory of finite groups and semisimple Lie algebras.</li>
+      </ul>
+
+      <p>Familiarity with toric geometry and characteristic classes will also be useful, but not required.</p>
+
+      <h3>References</h3>
+
+      <ul>
+        <li>N. Chriss and V. Ginzburg. <cite>Representation Theory and Complex Geometry</cite>. Boston: Birkh&#228;user, 1997.</li>
+        <li>D. Edidin. <cite>Riemann-Roch for Deligne-Mumford stacks</cite>. A celebration of algebraic geometry, 241–266, Clay Math. Proc., 18, Amer. Math. Soc., Providence, RI, 2013.</li>
+        <li>M. Haiman. <cite>Macdonald polynomials and geometry</cite>. New perspectives in algebraic combinatorics (Berkeley, CA, 1996-97) 38 (1999): 207-254.</li>
+        <li>A. Okounkov. <cite>Lectures on K-theoretic computations in enumerative geometry</cite>. In Geometry of moduli spaces and representation theory, volume 24 of IAS/Park City Math. Ser., pages 251-380. Amer. Math. Soc., Providence, RI, 2017.</li>
+      </ul>
+
+      <h3>Schedule</h3>
+
+      <table>
+        <colgroup>
+          <col span="1" style="width: 75px;">
+          <col span="1">
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <td>Week 1</td>
+            <td>Topological and algebraic K-theory. Functoriality and equivariance. Resolution of the diagonal and generators of the K-theory ring. Thom isomorphism. (<a href="lecture1.pdf">Lecture 1 notes</a>, <a href="lecture2.pdf">Lecture 2 notes</a>)</td>
+          </tr>
+
+          <tr>
+            <td>Week 2</td>
+            <td>Excision long exact sequence. Equivariant localization. An example: Weyl character formula. Rigidity arguments in place of cohomological vanishing. (<a href="lecture3.pdf">Lecture 3 notes</a>, <a href="lecture4.pdf">Lecture 4 notes</a>)</td>
+          </tr>
+          
+          <tr>
+            <td>Week 3</td>
+            <td>A comparison of cohomology and K-theory, especially for Deligne&ndash;Mumford stacks. Borel-equivariant K-theory and Atiyah&ndash;Segal. An example over the moduli stack of elliptic curves. (<a href="lecture5.pdf">Lecture 5 notes</a>, <a href="lecture6.pdf">Lecture 6 notes</a>)</td>
+          </tr>
+          
+          <tr>
+            <td>Week 4</td>
+            <td>Some broad perspective: elliptic cohomology and unitary cobordism, and \(\mathrm{Spec}(K_{\mathsf{G}})\) vs \(K_{\mathsf{G}}\) itself. (<a href="lecture7.pdf">Lecture 7 notes</a>, <a href="lecture8.pdf">Lecture 8 notes</a>)</td>
+          </tr>
+          
+          <tr>
+            <td>Week 5</td>
+            <td>A modern example: Hilbert scheme of points on \(\mathbb{C}^2\), K-theoretic Nekrasov theory, factorization. (<a href="lecture9.pdf">Lecture 9 notes</a>, <a href="lecture10.pdf">Lecture 10 notes</a>)</td>
+          </tr>
+          
+          <tr>
+            <td>Week 6</td>
+            <td>A combinatorial application: Macdonald positivity and Garsia&ndash;Haiman's \(n!\) and \((n+1)^{n-1}\) conjectures. (<a href="lecture11.pdf">Lecture 11 notes</a>, <a href="lecture12.pdf">Lecture 12 notes</a>)</td>
+          </tr>
+          
+          <tr>
+            <td>Week 7</td>
+            <td>Introduction to geometric representation theory. Affine Hecke algebras as the equivariant K-theory of Steinberg varieties. (<a href="lecture13.pdf">Lecture 13 notes</a>, <a href="lecture14.pdf">Lecture 14 notes</a>)</td>
+          </tr>
+
+          <tr>
+            <td>Week 8</td>
+            <td>Geometric representation theory of quantum loop algebras: Nakajima quiver varieties, stable envelopes, and the quantum group action on equivariant K-theory. (<a href="lecture15.pdf">Lecture 15 notes</a>, <a href="lecture16.pdf">Lecture 16 notes</a>)</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </article>
+  </div>
+</body>

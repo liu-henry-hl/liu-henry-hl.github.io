@@ -1,0 +1,227 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Learning Seminar on Conformal Field Theory (Fall 2019) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../research/">Research</a></li>
+	  <li><a href="../notes/">Notes/writing</a></li>
+	  <li><a href="../teaching/">Teaching</a></li>
+          <li><a href="./"><strong>Seminars</strong></a>
+            <ul>
+              <li><a href="s21-rep-theory/">(S21) Modern Techniques in Representation Theory</a></li>
+              <li><a href="s20-category-o.html">(S20) Things I should know about category O but I don't</a></li>
+              <li>(F19) Learning seminar on conformal field theory</li>
+              <li><a href="s19-symplectic-duality.html">(S19) Learning seminar on symplectic duality</a></li>
+              <li><a href="f18-enumerative-geometry.html">(F18) Enumerative geometry seminar</a></li>
+              <li><a href="./">earlier...</a></li>
+            </ul>
+          </li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Learning Seminar on Conformal Field Theory (Fall 2019)</h2>
+
+      <p>The goal of this seminar is to understand various aspects of
+      conformal field theory from a mathematical perspective.</p>
+
+      <ul>
+        <li>Organizer: <a href="../">Henry Liu</a></li>
+        <li>Time/date: Tuesdays 1:10-2:25pm</li>
+        <li>Location: Math 622</li>
+      </ul>
+
+      <p>I am live-TeXing notes for this seminar, available <a href="../notes/f19-sem-conformal-field-theory.pdf">here</a>.</p>
+
+      <p>Please email me at <a id="email">hliu at math dot columbia dot edu</a> if you would like to be on the mailing list.</p>
+      <script>
+        email = document.getElementById("email").innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("email").setAttribute("href", "mailto:" + email);
+      </script>
+
+      <h3>Plan/References</h3>
+
+      <p>The initial plan is to start with some foundations, from the
+      following sources:</p>
+
+      <ul>
+        <li>Ben-Zvi and Frenkel, <a href="https://math.berkeley.edu/~frenkel/BOOK/"><cite>Vertex algebras and algebraic curves</cite></a></li>
+        <li>di Francesco, Mathieu, Senechal, <a href="http://inspirehep.net/record/454643"><cite>Conformal field theory</cite></a></li>
+        <li>Gaw&#553;dzki, <cite>Lectures on conformal field theory</cite> from <a href="https://www.math.ias.edu/QFT/fall/"><cite>Quantum Fields and Strings: A Course for Mathematicians (Volume 2)</cite></a>.</li>
+      </ul>
+
+      <p>We will spend some time on (Virasoro) minimal models and
+      Liouville theory. Then the plan is to cover aspects of WZW
+      theory, (mainly?) following</p>
+
+      <ul>
+        <li>Etingof, Frenkel, Kirillov, <a href="https://bookstore.ams.org/surv-58"><cite>Lectures on representation theory and KZ equations</cite></a>.</li>
+      </ul>
+
+      <p>Later we may go through topics including W-algebras, the AGT
+      correspondence, relation to geometric Langlands, and
+      moonshine.</p>
+
+      <h3>Schedule</h3>
+
+      <table>
+        <colgroup>
+          <col span="1" style="width: 75px;">
+          <col span="1">
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <td>Tues Sep 17</td>
+            <td>
+              <strong>Organizational meeting</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Sep 24</td>
+            <td>
+              Konstantin Aleshkin<br/>
+              <cite>Introduction to CFT</cite><br/><br/>
+              
+              I will give an informal introduction to 2d CFT based on the so-called bootstrap formalism. I will introduce the main ingredients: Virasoro algebra and its representations, primary fields, BPZ equations, conformal blocks and correlation functions. My main examples will be Virasoro Minimal Models and Liouville CFT. I plan to briefly explain how other planned subjects for this seminar appear in this formalism (affine Lie algebras and KZ equations, W-algebras, AGT correspondence) if time permits.<br/><br/>
+
+              References:
+              <ul>
+                <li>Belavin, Polyakov and Zamolodchikov, <a href="http://qft.itp.ac.ru/BPZ.pdf">Infinite Conformal Symmetry in Two-Dimensional Quantum Field Theory</a></li>
+                <li>Zamolodchikov and Zamolodchikov, <cite>Conformal field theory and critical phenomena in 2d systems</cite></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 01</td>
+            <td>
+              Davis Lazowski<br/>
+              <cite>The local structure of CFT</cite><br/><br/>
+              
+              I will introduce vertex operator algebras and relate them to the local structure of conformal field theory.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 08</td>
+            <td>
+              Cailan Li<br/>
+              <cite>VOA: Examples and Representations</cite><br/><br/>
+              
+              We will go over some examples of VOA and then define modules over them. We will then define vertex algebras associated to (one)-dimensional lattices, in particular the free fermonic vertex superalgebra and prove the boson-fermion correspondence.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 15</td>
+            <td>
+              Yakov Kononov<br/>
+              <cite>Minimal models</cite><br/><br/>
+              
+              I will give an introduction to minimal models, and then answer all your questions.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 22</td>
+            <td>
+              Guillaume Remy<br/>
+              <cite>A probabilistic approach to Liouville conformal field theory</cite><br/><br/>
+
+              Liouville conformal field theory is an important example of a CFT with a continuous spectrum. It was first introduced in the context of string theory by A. Polyakov in 1981 in order to understand the summation over all Riemannian metric tensors in two dimensions. In this talk I will explain how one can use probability to make rigorous the physics path integral definition of Liouville theory and define the correlation functions. We will then discuss the BPZ equations, the DOZZ formula giving the value of the three-point function on the sphere, and if time permits, the conformal bootstrap and conformal blocks.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 29</td>
+            <td>
+              Ivan Danilenko<br/>
+              <cite>KZ equations</cite>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 05</td>
+            <td>
+              Gus Schrader<br/>
+              <cite>Free field realization, Wakimoto modules and integral solutions to KZ</cite><br/><br/>
+              
+              We will derive explicit integral formulas for the solutions of the KZ equations described by Ivan in last week's seminar. The key tool we'll use to do this is the free field realization of Wakimoto modules for affine Kac-Moody algebras. I'll explain some motivation behind this construction, then compute a bunch of OPE and answer all your questions.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thurs Nov 07 (<strong>4:30-6</strong> in <strong>507</strong>)</td>
+            <td>
+              Sam DeHority<br/>
+              <cite>Representations of Quantum Affine Algebras and qKZ equations</cite><br/><br/>
+              
+              We have seen that matrix coefficients of some intertwining operators of representations of affine algebras can be interpreted as correlation functions in WZW models, and they satisfy consistent differential equations, the KZ equations. The universal enveloping algebra of an affine algebra admits a q-deformation and Frenkel and Reshetikhin have shown that matrix coefficients of intertwiners satisfy an analogous system of difference equations, which tends to the KZ equations in the limit as q goes to 1.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 12</td>
+            <td>
+              Henry Liu<br/>
+              <cite>An overview of AGT</cite><br/><br/>
+              
+              I'll briefly explain the physical origin of the AGT correspondence, and then do a very explicit calculation (for a free field) to equate a conformal block and a Nekrasov partition function.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 19</td>
+            <td>
+              <strong>No meeting</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 26</td>
+            <td>
+              Shuai Wang<br/>
+              <cite>Analogies between conformal field theory and number theory</cite><br/><br/>
+              
+              We explain certain analogies between 2-dimensional conformal field theory and Fourier analysis on number fields. Specially, we demonstrate that the S-duality of a hypothetical gauge theory on a number field implies the quadratic reciprocity law. Time permitting, we'll also explain the similarity between the Verlinde formula and the class number formula and why the naive transportation of the conformal field theoretic proof of the Verlinde formula to the number theory world fails. 
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Dec 03</td>
+            <td>
+              Andrei Okounkov<br/>
+              <cite>qKZ equations and their role in enumerative geometry</cite><br/><br/>
+              
+              This will be an introduction to the subject.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </article>
+  </div>
+</body>
+</html>

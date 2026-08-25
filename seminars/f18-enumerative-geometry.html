@@ -1,0 +1,522 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Enumerative Geometry Seminar (Fall 2018) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../research/">Research</a></li>
+	  <li><a href="../notes/">Notes/writing</a></li>
+	  <li><a href="../teaching/">Teaching</a></li>
+          <li><a href="./"><strong>Seminars</strong></a>
+            <ul>
+              <li><a href="s21-rep-theory/">(S21) Modern Techniques in Representation Theory</a></li>
+              <li><a href="s20-category-o.html">(S20) Things I should know about category O but I don't</li>
+              <li><a href="f19-conformal-field-theory.html">(F19) Learning seminar on conformal field theory</a></li>
+              <li><a href="s19-symplectic-duality.html">(S19) Learning seminar on symplectic duality</a></li>
+              <li>(F18) Enumerative geometry seminar</li>
+              <li><a href="./">earlier...</a></li>
+            </ul>
+          </li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Enumerative Geometry Seminar (Fall 2018)</h2>
+
+      <p>The goal of this seminar is to understand the celebrated
+        Gromov-Witten/Donaldson-Thomas correspondence.</p>
+
+      <ul>
+        <li>Organizers: <a href="../">Henry Liu</a>, <a href="http://www.math.columbia.edu/~ccliu/">Melissa Chiu-Chu Liu</a></li>
+        <li>Time/date: Tuesdays 2:40-3:55pm and Wednesdays 1:10-2:25pm</li>
+        <li>Location: Math 507 (Tues) and Math 622 (Weds)</li>
+      </ul>
+
+      <p>Talks on the Gromov-Witten side will generally be on
+      Tuesdays. Talks on the Donaldson-Thomas side will generally be
+        on Wednesdays.</p>
+
+      <p>I am live-TeXing notes for this seminar, available <a href="../notes/f18-sem-gw-dt.pdf">here</a>.</p>
+
+      <p>Please email me at <a id="email">hliu at math dot columbia dot edu</a> if you would like to be on the mailing list.</p>
+      <script>
+        email = document.getElementById("email").innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("email").setAttribute("href", "mailto:" + email);
+      </script>
+
+      <h3>Plan/References</h3>
+
+      <p>The plan is to go through the MNOP and MOOP papers, which
+      state and prove (primary, descendant) GW/DT correspondences for
+      (toric, CY) 3-folds.</p>
+      
+      <ul>
+        <li><a href="https://arxiv.org/abs/math/0312059">[MNOP1]</a> <cite>Gromov-Witten theory and Donaldson-Thomas theory, I</cite></li>
+        <li><a href="https://arxiv.org/abs/math/0406092">[MNOP2]</a> <cite>Gromov-Witten theory and Donaldson-Thomas theory, II</cite></li>
+        <li><a href="https://arxiv.org/abs/0809.3976">[MOOP]</a> <cite>Gromov-Witten/Donaldson-Thomas correspondence for toric 3-folds</cite></li>
+      </ul>
+
+      <p>For the GW side, we need the GW vertex, which involves Hodge
+      integrals. The 1-leg and 2-leg cases are in the following
+      papers.</p>
+      
+      <ul>
+        <li><a href="https://arxiv.org/abs/math/0306434">[LLZ1]</a> <cite>A Proof of a Conjecture of Mari&ntilde;o-Vafa on Hodge integrals</cite></li>
+        <li><a href="https://arxiv.org/abs/math/0307209">[OP1]</a> <cite>Hodge integrals and invariants of the unknot</cite></li>
+        <li><a href="https://arxiv.org/abs/math/0310272">[LLZ2]</a> <cite>A Formula of Two-Partition Hodge Integrals</cite></li>
+      </ul>
+        
+      <p>To do GW/DT for arbitrary toric 3-folds, not just CY3s, we
+      need the theory for local curves and \(A_n\) resolutions.</p>
+        
+      <ul>
+        <li><a href="https://arxiv.org/abs/math/0411037">[BP]</a> <cite>The local Gromov-Witten theory of curves</cite></li>
+        <li><a href="https://arxiv.org/abs/math/0512573">[OP2]</a> <cite>The local Donaldson-Thomas theory of curves</cite></li>
+        <li><a href="https://arxiv.org/abs/0802.2681">[M]</a> <cite>Gromov-Witten theory of \(A_n\)-resolutions</cite></li>
+        <li><a href="https://arxiv.org/abs/0802.2739">[MO]</a> <cite>Donaldson-Thomas theory of \(A_n \times \mathbb{P}^1\)</cite></li>
+      </ul>
+      
+      <p>We may go through additional related topics/papers as time
+      permits.</p>
+
+      <h3>Schedule</h3>
+
+      <table>
+        <colgroup>
+          <col span="1" style="width: 75px;">
+          <col span="1">
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <td>Tues Sept 11</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>Hurwitz numbers and the ELSV formula</cite><br/><br/>
+              
+              The ELSV formula, first proved by Ekedahl, Lando,
+              Shapiro, and Vainshtein, relates Hurwitz numbers to
+              Hodge integrals. In this talk, we explain what the ELSV
+              formula is and how to prove it by virtual localization
+              on moduli of relative stable maps to the projective line
+              relative a point, following Graber-Vakil.<br/><br/>
+              
+              Reference: <a href="https://arxiv.org/abs/1004.0853"><cite>Lectures on the ELSV formula</cite></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Sept 12</td>
+            <td>
+              Clara Dolfen<br/>
+              <cite>GW/DT for local CY toric surfaces</cite><br/><br/>
+              
+              In their paper "Gromov-Witten theory and Donaldson
+              Thomas theory I" (MNOP1), Maulik et al. conjecture a
+              correspondence between the generating functions of
+              Gromov-Witten and Donaldson-Thomas invariants for
+              3-folds, and prove it in the case of local Calabi-Yau
+              toric surfaces. In this talk, we will give a brief
+              introduction to DT theory, and talk about the fixed
+              points of the DT moduli space under the torus action. We
+              will use this insight to compute the DT counts via
+              virtual localization following MNOP1.<br/><br/>
+              
+              Reference: <a href="https://arxiv.org/abs/math/0312059">[MNOP1]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Sept 18</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>ELSV formula via relative virtual
+              localization</cite><br/><br/>
+              
+              This is a sequel of my talk on September 11. In my talk
+              on September 11, we defined Hodge integrals and simple
+              Hurwitz numbers, and stated the ELSV formula (first
+              proved by Ekedahl-Lando-Shapiro-Vainshtein) expressing
+              simple Hurwitz numbers in terms of Hodge integrals. We
+              then interpreted each simple Hurwitz number as the
+              degree of a morphism from certain moduli of relative
+              stable maps to a projective space. In this talk, we
+              prove the ELSV formula by computing this degree via
+              relative virtual localization.<br/><br/>
+              
+              Reference: <a href="https://arxiv.org/abs/1004.0853"><cite>Lectures on the ELSV formula</cite></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Sept 19</td>
+            <td>
+              Clara Dolfen<br/>
+              <cite>DT for local CY toric surfaces</cite><br/><br/>
+              
+              Last week we set up the machinery needed to compute the
+              DT invariants for toric CY 3-folds via virtual
+              localization. In this talk, we will briefly recall the
+              weight decomposition of the virtual tangent space and
+              use it to derive an explicit formula for the DT counts
+              in the case of local CY toric surfaces.<br/><br/>
+              
+              Reference: <a href="https://arxiv.org/abs/math/0312059">[MNOP1]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Sept 25</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>GW/DT correspondence for the resolved conifold</cite><br/><br/>
+              
+              The resolved conifold is the total space of
+              \(\mathcal{O}(-1)\oplus \mathcal{O}(-1)\) over
+              \(\mathbb{P}^1\). It is a toric Calabi-Yau threefold
+              whose GW/DT invariants can be interpreted as local GW/DT
+              invariants of a super-rigid smoothly embedded rational
+              curve in a Calabi-Yau threefold. We will explain GW/DT
+              correspondence for the resolved conifold, and its
+              relation with the Gopakumar-Vafa conjecture.<br/><br/>
+              
+              References:
+              <ul>
+                <li>Graber and Pandharipande, <a href="https://arxiv.org/abs/alg-geom/9708001"><cite>Localization of virtual classes</cite></a></li>
+                <li>Faber and Pandharipande, <a href="https://arxiv.org/abs/math/9810173"><cite>Hodge integrals and Gromov-Witten theory</cite></a></li>
+                <li>Behrend and Bryan, <a href="https://arxiv.org/abs/math/0601203"><cite>Super-rigid Donaldson-Thomas invariants</cite></a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Sept 26</td>
+            <td>
+              Ivan Danilenko<br/>
+              <cite>GW/DT in relative setting and with descendants</cite><br/><br/>
+              
+              This time we follow "Gromov-Witten theory and Donaldson
+              Thomas theory II" (MNOP2), Maulik et al. The main goal of
+              the talk is to introduce DT invariants with insertions
+              and relative DT invariants. We will state (partly
+              conjectural) relations with their GW counterparts. Time
+              permitting, we'll show how to compute zero dimensional
+              contributions in DT theory by localization.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0406092">[MNOP2]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 02</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>GW/DT correspondence for the resolved conifold II</cite><br/><br/>
+              
+              This is a sequel of my talk on September 25.<br/><br/>
+
+              References:
+              <ul>
+                <li>Graber and Pandharipande, <a href="https://arxiv.org/abs/alg-geom/9708001"><cite>Localization of virtual classes</cite></a></li>
+                <li>Faber and Pandharipande, <a href="https://arxiv.org/abs/math/9810173"><cite>Hodge integrals and Gromov-Witten theory</cite></a></li>
+                <li>Behrend and Bryan, <a href="https://arxiv.org/abs/math/0601203"><cite>Super-rigid Donaldson-Thomas invariants</cite></a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Oct 03</td>
+            <td>
+              Ivan Danilenko<br/>
+              <cite>GW/DT in relative setting and with descendants II</cite><br/><br/>
+
+              We'll define the DT rubber theory and use it to compute
+              the equivariant vertex in the relative
+              setting.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0406092">[MNOP2]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 09</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>Introduction to Relative Gromov-Witten Theory</cite><br/><br/>
+              
+              References:
+              <ul>
+                <li>Jun Li, <a href="https://projecteuclid.org/euclid.jdg/1090348132"><cite>Stable morphisms to singular schemes and relative stable morphisms</cite></a></li>
+                <li>Jun Li, <a href="https://arxiv.org/abs/math/0110113"><cite>A degeneration formula of GW-invariants</cite></a></li>
+                <li>Jun Li, <a href="Jun-Li-Lectures-on-Relative-GW.ps"><cite>Lecture notes on relative GW-invariants</cite></a> (ICTP lecture notes)</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Oct 10</td>
+            <td>
+              Ivan Danilenko<br/>
+              <cite>GW/DT in relative setting and with descendants III</cite><br/><br/>
+              
+              We'll define the DT rubber theory and use it to compute
+              the equivariant vertex in the relative
+              setting.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0406092">[MNOP2]</a>, <a href="https://arxiv.org/abs/math/0512573">[OP2]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 16</td>
+            <td>
+              Henry Liu<br/>
+              <cite>The GW local curves TQFT</cite><br/><br/>
+              
+              We'll define the 2d TQFT associated to the GW partition
+              function for local curves. If time permits we'll prove
+              its semisimplicity.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0411037">[BP]</a>
+              <ul>
+                <li>Bryan and Pandharipande, <a href="https://arxiv.org/abs/math/0306316"><cite>Curves in Calabi–Yau threefolds and topological quantum field theory</cite></a></li>
+                <li>Freed, <a href="https://web.ma.utexas.edu/users/dafr/OldTQFTLectures.pdf"><cite>Lectures on topological quantum field theory</cite></a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Oct 17</td>
+            <td>
+              Anton Osinenko<br/>
+              <cite>Local DT theory of curves</cite><br/><br/>
+              
+              The local Donaldson-Thomas theory of curves is solved by
+              localization and degeneration methods. The results
+              complete a triangle of equivalences relating
+              Gromov-Witten theory, Donaldson-Thomas theory, and the
+              quantum cohomology of the Hilbert scheme of points of
+              the plane. The quantum differential equation of the
+              Hilbert scheme of points of the plane has a natural
+              interpretation in the local Donaldson-Thomas theory of
+              curves. The solution determines the 1-legged equivariant
+              vertex.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0512573">[OP2]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 23</td>
+            <td>
+              Henry Liu<br/>
+              <cite>Local curve computations</cite><br/><br/>
+              
+              We'll prove the GW local curves TQFT is semisimple and
+              compute its pieces: tube, caps, and pair of pants.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0411037">[BP]</a>
+              <ul>
+                <li>Bryan and Pandharipande, <a href="https://arxiv.org/abs/math/0306316"><cite>Curves in Calabi–Yau threefolds and topological quantum field theory</cite></a></li>
+                <li>Faber and Pandharipande, <a href="https://arxiv.org/abs/math/9810173"><cite>Hodge integrals and Gromov-Witten theory</cite></a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Oct 24</td>
+            <td>
+              Shuai Wang<br/>
+              <cite>Local DT theory of curves</cite><br/><br/>
+              
+              The local Donaldson-Thomas theory of curves is solved by
+              localization and degeneration methods. The results
+              complete a triangle of equivalences relating
+              Gromov-Witten theory, Donaldson-Thomas theory, and the
+              quantum cohomology of the Hilbert scheme of points of
+              the plane. The quantum differential equation of the
+              Hilbert scheme of points of the plane has a natural
+              interpretation in the local Donaldson-Thomas theory of
+              curves. The solution determines the 1-legged equivariant
+              vertex.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0512573">[OP2]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Oct 30</td>
+            <td>
+              Henry Liu<br/>
+              <cite>Cap and pants</cite><br/><br/>
+              
+              We'll first finish computing the level (-1,0) cap. Then
+              we'll finish computing the whole local curves TQFT by
+              computing the level (0,0) pair of pants explicitly in
+              one (simple) case, and then in general via a
+              reconstruction result.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0411037">[BP]</a>
+              <ul>
+                <li>Bryan and Pandharipande, <a href="https://arxiv.org/abs/math/0306316"><cite>Curves in Calabi–Yau threefolds and topological quantum field theory</cite></a></li>
+                <li>Faber and Pandharipande, <a href="https://arxiv.org/abs/math/9810173"><cite>Hodge integrals and Gromov-Witten theory</cite></a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Oct 31</td>
+            <td>
+              Shuai Wang<br/>
+              <cite>Local DT theory of curves</cite><br/><br/>
+              
+              We will compute the cap and pair of pants.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0512573">[OP2]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 06</td>
+            <td>
+              <strong>No meeting</strong> (election day)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Nov 07</td>
+            <td>
+              <strong>No meeting</strong> (we're taking a break!)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 13</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>The 1-leg Gromov-Witten vertex</cite><br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/math/0306434">[LLZ1]</a>, <a href="https://arxiv.org/abs/math/0307209">[OP1]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Nov 14</td>
+            <td>
+              Yakov Kononov<br/>
+              <cite>Relative DT theory of \(A_n \times \mathbb{P}^1\)</cite><br/><br/>
+              
+              The talk will be devoted to the relative
+              Donaldson-Thomas theory of \(A_n \times \mathbb{P}^1\).
+              I will express the action of divisor operators in terms
+              of the action of \(\widehat{\mathfrak{gl}}(n+1)\) on the
+              Fock space.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/0802.2739">[MO]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 20</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>The 2-leg Gromov-Witten vertex</cite><br/><br/>
+              
+              References:
+              <ul>
+                <li>Chiu-Chu Melissa Liu, Kefeng Liu, and Jian Zhou, <a href="https://arxiv.org/abs/math/0310272"><cite>A formula of two-partition Hodge integrals</cite></a></li>
+                <li>Chiu-Chu Melissa Liu, <a href="https://arxiv.org/abs/math/0502430"><cite>Formulae of one-partition and two-partition Hodge integrals</cite></a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Nov 21</td>
+            <td>
+              <strong>No meeting</strong> (Thanksgiving)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Nov 27</td>
+            <td>
+              Melissa Liu<br/>
+              <cite>A mathematical theory of the topological vertex</cite><br/><br/>
+              
+              References:
+              <ul>
+                <li>Mina Aganagic, Albrecht Klemm, Marcos Mari&ntilde;o, and Cumrun Vafa, <a href="https://arxiv.org/abs/hep-th/0305132"><cite>The Topological Vertex</cite></a></li>
+                <li>Jun Li, Chiu-Chu Melissa Liu, Kefeng Liu, and Jian Zhou, <a href="https://arxiv.org/abs/math/0408426"><cite>A Mathematical Theory of the Topological Vertex</cite></a></li>
+                <li>Chiu-Chu Melissa Liu, <a href="https://arxiv.org/abs/0811.4703"><cite>Gromov-Witten invariants of toric Calabi-Yau threefolds</cite></a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Nov 28</td>
+            <td>
+              Andrei Okounkov<br/>
+              <cite>Toric GW/DT correspondence</cite><br/><br/>
+              
+              I will describe the full GW/DT correspondence for toric
+              3-folds using capped vertices and then answer all your
+              questions.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/0809.3976">[MOOP]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tues Dec 04</td>
+            <td>
+              Henry Liu<br/>
+              <cite>Capping and quantum differential equation</cite><br/><br/>
+              
+              We'll see in detail the derivation of the QDE for the
+              capping operator, using rubber calculus. Then we'll
+              match the operator \(M_D\) on the GW/DT sides and use it
+              to match capped edges. <br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/0809.3976">[MOOP]</a>,
+              <a href="https://arxiv.org/abs/math/0512573">[OP2]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Weds Dec 05</td>
+            <td>
+              Henry Liu<br/>
+              <cite>Capping and quantum differential equation</cite><br/><br/>
+              
+              Continuation of Tuesday.<br/><br/>
+              
+              References: <a href="https://arxiv.org/abs/0809.3976">[MOOP]</a>,
+              <a href="https://arxiv.org/abs/math/0512573">[OP2]</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </article>
+  </div>
+</body>
+</html>

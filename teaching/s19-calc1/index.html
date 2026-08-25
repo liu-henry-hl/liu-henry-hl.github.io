@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Calc 1 (Spring 2019) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../../research/">Research</a></li>
+	  <li><a href="../../notes/">Notes/writing</a></li>
+	  <li><a href="../"><strong>Teaching</strong></a>
+            <ul>
+              <li><a href="../s22-k-theory/">(S22) Equivariant K-theory</a></li>
+              <li><a href="../s20-knots/">(S20) Undergrad seminar on knot theory</a></li>
+              <li><a href="../ss19-ode/">(SS19) Ordinary differential equations</a></li>
+              <li>(S19) Calculus I</li>
+              <li><a href="../../shp/">(SHP) Representation theory and physics</a></li>
+              <li><a href="../../shp/geometry-and-topology.html">(SHP) Geometry and topology</a></li>
+            </ul>
+          </li>
+          <li><a href="../../seminars/">Seminars</a></li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Calculus 1: MATH UN1101 Section 5 (Spring 2019)</h2>
+
+      <p>
+        <ul>
+          <li>Classes: Tues/Thurs 1:10pm - 2:25pm, 407 Mathematics Building</li>
+          <li>Instructor: <a href="../../">Henry Liu</a>
+          (<a id="email">hliu at math dot columbia dot edu</a>)</li>
+          <li>Office hours: Fri 12:00pm - 2:00pm, 528 Mathematics Building (or appointment by email)</li>
+          <li>TAs: Annie Lin (<a id="email1">zl2542 at columbia dot edu</a>), Tal Zilkha (<a id="email2">tiz2102 at columbia dot edu</a>)</li>
+          <li>TA help room hours: in <a href="http://www.math.columbia.edu/general-information/help-rooms/502-milstein/">502 Milstein Center Barnard</a>
+            <ul>
+              <li>Annie: Weds 2:00pm - 3:00pm and Thurs 3:00pm - 4:00pm</li>
+              <li>Tal: Fri 10:00am - 12:00pm</li>
+            </ul>
+          </li>
+        </ul>
+        For more details (e.g. grading policy, exams, course schedule)
+        see the <a href="syllabus.pdf">course syllabus</a>.
+      </p>
+      <script>
+        function humanize(id){
+        email = document.getElementById(id).innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById(id).innerHTML = email;
+        document.getElementById(id).setAttribute("href", "mailto:" + email);
+        }
+        humanize("email"); humanize("email1"); humanize("email2");
+      </script>
+
+      <p><strong>Midterm 1</strong> is in class on <strong>Feb
+      19</strong>. Here is a <a href="midterm1-practice.pdf">practice
+      midterm</a>
+      and <a href="midterm1-practice-solns.pdf">solutions</a>.</p>
+
+      <p><strong>Midterm 2</strong> is in class on <strong>Apr
+      02</strong>. Here is a <a href="midterm2-practice.pdf">practice
+      midterm</a>
+        and <a href="midterm2-practice-solns.pdf">solutions</a>.</p>
+
+      <p>The <strong>final</strong> is <strong>May 14, 1:10pm -
+      4:00pm</strong> in <strong>Math 407</strong>. Here is
+      a <a href="final-practice.pdf">practice final</a>
+      and <a href="final-practice-solns.pdf">solutions</a>.</p>
+
+      <h3>Homework</h3>
+
+      <p>There are weekly homework assignments, due in class by the
+      <strong>start of class every Tuesday</strong>. (You can also
+      drop them off before class in the drop box on the 4th floor of
+      the Math building.)
+        <ul>
+          <li><a href="hwk1.pdf">Homework 1</a> (due Jan 28)
+            and <a href="hwk1-solns.pdf">solutions</a></li>
+          <li><a href="hwk2.pdf">Homework 2</a> (due Feb 04)
+            and <a href="hwk2-solns.pdf">solutions</a></li>
+          <li><a href="hwk3.pdf">Homework 3</a> (due Feb 11)
+            and <a href="hwk3-solns.pdf">solutions</a>
+          <br><strong>Update (Feb 07)</strong>: Some numbers in
+            problems 2 and 6 have been changed, sorry!</li>
+          <li><a href="hwk4.pdf">Homework 4</a> (due Feb 18)
+            and <a href="hwk4-solns.pdf">solutions</a></li>
+          <li><a href="hwk5.pdf">Homework 5</a> (due Feb 25)
+            and <a href="hwk5-solns.pdf">solutions</a></li>
+          <li><a href="hwk6.pdf">Homework 6</a> (due <strong>Mar 07</strong>)
+            and <a href="hwk6-solns.pdf">solutions</a>
+            <br>Suggested practice: (3.4) 13, 23, 26, 31, 42, 59, 61,
+            94; (3.5) 12, 15, 21, 25, 75, 78; (3.6) 7, 18, 20, 45, 52,
+            55.
+          </li>
+          <li><a href="hwk7.pdf">Homework 7</a> (due <strong>Mar 14</strong>)
+            and <a href="hwk7-solns.pdf">solutions</a>
+            <br><strong>Update (Mar 08)</strong>: Some numbers in
+            problem 1 have been changed, sorry!
+            <br>Suggested practice: (3.9) 1, 5, 29, 45, 49; (3.10) 4,
+            23, 26, 44.
+          </li>
+          <li><a href="hwk8.pdf">Homework 8</a> (due Mar 26)
+            and <a href="hwk8-solns.pdf">solutions</a>
+            <br>Suggested practice: (4.1) 7, 34, 35, 49, 59; (4.2) 5,
+            9, 27, 36, 37; (4.3) 11, 13, 16, 27, 34; (4.7) 4, 15, 21,
+            77.
+          </li>
+          <li><a href="hwk9.pdf">Homework 9</a> (due <strong>Apr 04</strong>)
+            and <a href="hwk9-solns.pdf">solutions</a>
+            <br>Suggested practice: (4.4) 14, 18, 27, 39, 47, 73, 89;
+            (4.7) 3, 6, 23.
+          </li>
+          <li><a href="hwk10.pdf">Homework 10</a> (due Apr 16)
+            and <a href="hwk10-solns.pdf">solutions</a>
+            <br>Suggested practice: (4.9) 14, 18, 22, 41, 46, 51;
+            (5.1) 13, 25, 26.
+          </li>
+          <li><a href="hwk11.pdf">Homework 11</a> (due Apr 23)
+            and <a href="hwk11-solns.pdf">solutions</a>
+            <br>Suggested practice: (5.2) 7, 21, 23, 29, 33, 49, 57,
+            73; (5.3) 3, 5, 9, 13, 25, 29, 33, 39, 56, 84.
+          </li>
+          <li><a href="hwk12.pdf">Homework 12</a> (due Apr 30)
+            and <a href="hwk12-solns.pdf">solutions</a>
+            <br>Suggested practice: (5.4) 3, 9, 31, 38, 45, 53, 56,
+            59; (5.5) 4, 5, 12, 25, 45, 57, 59, 71, 91.
+          </li>
+          <li><a href="hwk13.pdf">Homework 13</a> (due May 07)
+            and <a href="hwk13-solns.pdf">solutions</a>
+            <br>Suggested practice: (6.1) 1, 14, 25, 29; (6.2) 2, 3, 7, 31a.
+          </li>
+          <li>(<strong>Bonus</strong>) <a href="hwk14.pdf">Homework
+          14</a> (hand in to drop box any time before the final)</li>
+        </ul>
+      </p>
+    </article>
+  </div>
+</body>

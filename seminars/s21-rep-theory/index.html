@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Modern Techniques in Representation Theory (Spring 2021) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../../styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../../research/">Research</a></li>
+	  <li><a href="../../notes/">Notes/writing</a></li>
+	  <li><a href="../../teaching/">Teaching</a></li>
+          <li><a href="../"><strong>Seminars</strong></a>
+            <ul>
+              <li>(S21) Modern Techniques in Representation Theory</li>
+              <li><a href="../s20-category-o.html">(S20) Things I should know about category O but I don't</a></li>
+              <li><a href="../f19-conformal-field-theory.html">(F19) Learning seminar on conformal field theory</a></li>
+              <li><a href="../s19-symplectic-duality.html">(S19) Learning seminar on symplectic duality</a></li>
+              <li><a href="../f18-enumerative-geometry.html">(F18) Enumerative geometry seminar</a></li>
+              <li><a href="../">earlier...</a></li>
+            </ul>
+          </li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Modern Techniques in Representation Theory (Spring 2021)</h2>
+
+      <ul>
+        <li>Organizers: <a href="http://math.columbia.edu/~ccl/">Cailan Li</a>, <a href="../../">Henry Liu</a>, <a href="http://math.columbia.edu/~mrudul/">Mrudul Thatte</a></li>
+        <li>Time/date: Fridays 4:00pm - 5:40pm Eastern Time (UTC−5:00)</li>
+        <li>Location: online</li>
+      </ul>
+
+      <p>This is an online learning seminar on modern techniques in representation theory, which will include: Soergel bimodules, parabolic category \(\mathcal{O}\), and KLR algebras.</p>
+
+      <p>Talks will roughly be 45 minutes followed by a 5-10 minute
+      break followed by 45 more minutes.</p>
+
+      <p>Please email Cailan at <a id="email">ccl at math dot columbia dot edu</a> if you would like to join the seminar, and/or for the password to access the recordings of the talks.</p>
+      <script>
+        email = document.getElementById("email").innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("email").setAttribute("href", "mailto:" + email);
+      </script>
+
+      <h3>Rules for the seminar</h3>
+
+      <ol>
+        <li>You must have an example/computation in \(\mathfrak{sl}_2\) or \(\mathfrak{sl}_3\) in your talk.</li>
+        <li>You cannot give a slides talk unless your talk does not have an example/computation in \(\mathfrak{sl}_2\) or \(\mathfrak{sl}_3\).</li>
+        <li>Turn your video on (for the most part) as a courtesy to the speaker.</li>
+        <li>There are no dumb questions.</li>
+      </ol>
+
+      <p>Please send your title and abstract to Cailan by Wednesday night, and your notes to Henry before your talk starts. If by some miracle you have your notes written and talk prepared by the end of Wednesday, you can include the notes in your email to Cailan.</p>
+
+      <h3>Schedule</h3>
+
+      <table>
+        <colgroup>
+          <col span="1" style="width: 75px;">
+          <col span="1">
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <td>Fri Jan 22</td>
+            <td>
+              &Aacute;lvaro Mart&iacute;nez<br/>
+              <cite>Introduction to Soergel Bimodules</cite><br/><br/>
+              
+              Soergel bimodules are a combinatorial categorification of the Hecke algebra, and can be used to give an algebraic proof of the Kazhdan-Lusztig conjecture. In this talk we will review preliminary notions such as the Hecke algebra of a Coxeter system, define Soergel bimodules and see some examples of categorification.<br/><br/>
+
+              Links: <a href="alvaro-soergel-bimodules.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/pD82u_LuwBBul7G2scDX1zLM6lVhggPnQOpmpCygcolS6gmiYUjsuDPoBzeUASnm.qfqeDYQAN0qDOpYR">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Jan 29</td>
+            <td>
+              Jin-Cheng Guu<br/>
+              <cite>Pictorial presentation of 2-categories</cite><br/><br/>
+              
+              We will define 2-cats \(C\) and provide some examples. While different presentations of \(C\) are available, we will use the pictorial presentation as it sheds insight on the structure of \(C\). Then we will address a special case of 2-cats, the monoidal cats, which are ubiquitous in modern mathematics. A toy but important example is the Temperley-Lieb category. Interestingly, it has even more structures. We will see how those structures mean in the pictorial presentation.<br/><br/>
+
+              Links: <a href="jin-2cat-diagrammatics.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/PxAPcFbvAcbR312SM0ex4MWzMs7-FsFOgN1EMYfFI68CKSd2MNQLSRR3AnrPDclK.usM2JeSaV9LFOCAT">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Feb 05</td>
+            <td>
+              Micah Gay<br/>
+              <cite>One-Colour Calculus (or: What Diagrammatics Can Do for You, if You’re a Bott-Samelson Bimodule Corresponding to a Simple Reflection)</cite><br/><br/>
+              
+              First, we will define Frobenius algebra objects for monoidal categories, and discuss how they arise in the case of Bott-Samelson bimodules. Then we will draw many, many pictures to develop the diagrammatics we discussed last time to describe Bott-Samelson bimodules corresponding to a simple reflection.<br/><br/>
+
+              Links: <a href="https://columbiauniversity.zoom.us/rec/share/zh5ureWu-V-9B6Np935KNHm7xJc_R7AzYFh4g2oU0exdDZl9MDf5v3BodoUaVfCu.iSQwkI1pq1TKtLqt">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Feb 12</td>
+            <td>
+              Nikolay Grantcharov<br/>
+              <cite>Parabolic Category O</cite><br/><br/>
+              
+              We introduce parabolic subalgebras and study basic properties of the parabolic analogue of BGG category O. In particular, we give a characterization of objects in parabolic category O in terms of their simple components, and we highlight the main differences with the standard BGG category O by illustrating an example for \(\mathfrak{sl}_3(\mathbb{C})\).<br/><br/>
+
+              Links: <a href="nikolay-parabolic-category-o.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/_etB3MMBhFyT8rxc6yTNK9CZCtkCiAtvnnIe_swzjUIRD71hGLlgabXneQJ0_lpQ.5sKIDCJBKtqBWDhr">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Feb 19</td>
+            <td>
+              &Aacute;lvaro Mart&iacute;nez<br/>
+              <cite>The Dihedral Cathedral</cite><br/><br/>
+              
+              We will develop a diagrammatic presentation for \(\mathbb{BS}\mathrm{Bim}\) in the case of dihedral groups, this time using two colors.<br/><br/>
+
+              Links: <a href="alvaro-dihedral-cathedral.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/yMvn9BQrQZhKVXcAcQdKSJAhcP44gRKEABBYLb7_pL5pXkv-owlg16M9ca6l6vbL.nG0OlWNdFYupB0er">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Feb 26</td>
+            <td>
+              Cailan Li<br/>
+              <cite>Singular Soergel Bimodules</cite><br/><br/>
+              
+              We introduce Singular Soergel Bimodules and explain the connection with singular Category O. We then go over their diagrammatics in one color and afterwards explain the role they play in the algebraic Satake equivalence, in particular the connection to finite dimensional representations of lie algebras.<br/><br/>
+
+              Links: <a href="cailan-singular-soergel-bimodules.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/xcvJjcZJMptCdNCy8TCTve2ecAU2HdwLjRIt8XGm4wkySEcJDuMMeRG34COmm5rU.M7OtERx2ZICdsX6A">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Mar 05</td>
+            <td>
+              Jin-Cheng Guu<br/>
+              <cite>Koszul duality and Kazhdan-Lusztig conjecture</cite><br/><br/>
+              
+              Generalized Koszul dualities show up in many different contexts. Roughly speaking, they interchange simple objects of one category with projective objects of another category. As in the ext-sym example below, it's clear that two categories need not be the same. However, the Kazhdan-Lusztig conjecture (proved) suggests that there should be a Koszul self-duality on category O. It is more subtle however, as such phenomenon appears only when some suitable gradings are remembered (slogan: symmetries that show up only after deformation).<br/><br/>
+
+              In this talk, we will introduce Morita theory in both the classical and the differential-graded context. We will explain that the Koszul duality between the exterior algebra and symmetric algebra is an example of the latter. Time permitting, we will address Koszul duality for category O.<br/><br/>
+
+              Reference: chapters 26 and 27 of <a href="https://www.springer.com/gp/book/9783030488253">Introduction to Soergel Bimodules</a>, 2020<br/><br/>
+
+              Links: <a href="jin-dg-morita-theory.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/hFdkOXjub8Ge7IBphvDgXObI9ArA7Yvx6CA3GfvM7ShwbQdBQV98cH3pLHuZ-6-n.SwnoMYiHZEwCEqw9">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Mar 12</td>
+            <td>
+              <strong>No seminar</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Mar 19</td>
+            <td>
+              Zhaoting Wei<br/>
+              <cite>Koszul duality for algebras</cite><br/><br/>
+              
+              First I will introduce differential graded coalgebras, twisting morphisms, and bar-cobar adjunction. Then I will cover Koszul resolution and Koszul duality for quadratic algebras. The main examples are polynomial algebras and wedge algebras. I will mostly follow <cite><a href="http://mattbooth.info/notes/hodgeproject.pdf">Differential Graded Algebras and Applications</a></cite> Chapter 2 by August, Booth, Cooke, and Weelinck, which is a abridged version of <cite><a href="https://www.springer.com/gp/book/9783642303616">Algebraic Operads</a></cite> Chapter 1, 2, 3 by Loday.<br/><br/>
+
+              Links: <a href="https://columbiauniversity.zoom.us/rec/share/BXbJpse--D8CwGyT1vAGvgFS36MKWNIoEx737AWU4F9WZL9uLXUpQInj4xk76To4.BhNLFlbOSaYvzzhF">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Mar 26</td>
+            <td>
+              <strong>No seminar</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Apr 02</td>
+            <td>
+              Nikolay Grantcharov<br/>
+              <cite>Projective functors</cite><br/><br/>
+              
+              Projective functors are a generalization of translation functors and are defined as a summand of the tensoring with finite-dimensional Ug-module functor. We will outline a proof of the classification all such functors and describe their morphisms, following the original paper by Bernstein and Gelfand. We also discuss a nice proof of Duflo's theorem on the annihilator of a Verma module.<br/><br/>
+
+              Links: <a href="https://columbiauniversity.zoom.us/rec/share/aqfk_-zKoJm5WMDcZPkYwwfPck3449HmPN50wqtcO6S5TzEsSYx0eC_LJ6aaQKKT.0KH5RgWKBEtnzhwq">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Apr 09</td>
+            <td>
+              Cailan Li<br/>
+              <cite>Lusztig's Canonical Basis, Part I</cite><br/><br/>
+              
+              Given a vector space there are many bases. However, for quantum groups and their (integrable) representations, it turns out there is one particulary nice one, called the canonical basis. In the early 90's, Lusztig constructed this basis using equivariant perverse sheaves on the moduli space of representations of a quiver. We will give an introduction to this construction. We first motivate Lusztig's result by defining the Hall algebra of a quiver and their relationship to quantum groups. Using perverse sheaves, we will categorify multiplication in the Hall algebra and define a candidate for the categorification of the quantum group. Finally, we will compute the fundamental relations between certain simple perverse sheaves in preperation for Part II. <br/><br/>
+
+              References: [Schiffmann] <a href="https://arxiv.org/abs/0910.4460">Lectures on Canonical and Crystal Bases of Hall Algebras</a>, [Kirillov Jr.] <a href="https://bookstore.ams.org/gsm-174">Quiver Representations and Quiver Varieties</a><br/><br/>
+
+              Links: <a href="cailan-lusztig-canonical-basis-i.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/eCT8QDL-ANNdIqCaPKp6ROhlHeuGpC44YVmagLUpUAO1NN5-xmVmu9NbiQnT7kfR.gUJ8gHim3Wekd2f2">recording</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Apr 16</td>
+            <td>
+              Cailan Li<br/>
+              <cite>Lusztig's Canonical Basis, Part II</cite><br/><br/>
+              
+              We will first define a homomorphism from the Lusztig integral form of the upper half of the quantum group associated to a quiver into the Grothendieck group of the Hall category on that quiver. We then state the main theorem of the talk, and prove it in the case that the quiver is of finite type. As a result, we will be able to define the canonical basis of the quantum group, explain what makes it "canonical" and give examples for type A_2.<br/><br/> 
+
+              The remainder of the talk will be a <em>brief</em> survey of the relationship between Lusztig's canonical bases with other topics in representation theory. Topics <em>may</em> include: Kazhdan-Lusztig basis, Crystal Basis, Quantum Symmetric Pairs, LLT conjecture and KLR algebras.<br/><br/>
+
+              Reference: [Schiffmann] <a href="https://arxiv.org/abs/0910.4460">Lectures on Canonical and Crystal Bases of Hall Algebras</a><br/><br/>
+
+              Links: <a href="cailan-lusztig-canonical-basis-ii.pdf">notes (PDF)</a> and <a href="https://columbiauniversity.zoom.us/rec/share/l0wc5d-hw-tvbB17otfhIx8SbbEGK2aUwbeuTemGxvGnBLjEzqpQYcA552aXfKNH.9HdjzFd1w7wbR-dl">recording</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </article>
+  </div>
+</body>
+</html>

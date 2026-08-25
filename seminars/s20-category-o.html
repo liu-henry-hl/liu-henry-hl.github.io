@@ -1,0 +1,369 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="Henry Liu" name="author" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width; initial-scale=1" />
+  <title>Things I should know about category O but I don't (Summer 2020) -- Henry Liu</title>
+  <link type="text/css" rel="stylesheet" href="../styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="../">Henry Liu</a></h1>
+
+      <nav>
+	<ul>
+          <li><a href="../research/">Research</a></li>
+	  <li><a href="../notes/">Notes/writing</a></li>
+	  <li><a href="../teaching/">Teaching</a></li>
+          <li><a href="./"><strong>Seminars</strong></a>
+            <ul>
+              <li><a href="s21-rep-theory/">(S21) Modern Techniques in Representation Theory</a></li>
+              <li>(S20) Things I should know about category O but I don't</li>
+              <li><a href="f19-conformal-field-theory.html">(F19) Learning seminar on conformal field theory</a></li>
+              <li><a href="s19-symplectic-duality.html">(S19) Learning seminar on symplectic duality</a></li>
+              <li><a href="f18-enumerative-geometry.html">(F18) Enumerative geometry seminar</a></li>
+              <li><a href="./">earlier...</a></li>
+            </ul>
+          </li>
+	</ul>
+      </nav>
+
+    </header>
+
+    <article>
+      <h2>Things I should know about category O but I don't (Summer 2020)</h2>
+
+      <ul>
+        <li>Organizers: <a href="http://math.columbia.edu/~ccl/">Cailan Li</a>, <a href="../">Henry Liu</a>, <a href="http://math.columbia.edu/~mrudul/">Mrudul Thatte</a></li>
+        <li>Time/date: Fridays 3:10pm - 4:50pm Eastern Time (UTC−5:00)</li>
+        <li>Location: online</li>
+      </ul>
+
+      <p>This is an online learning seminar on category \(\mathcal{O}\). The plan is to roughly follow the book</p>
+
+      <ul>
+        <li>[H] Humphreys, <cite><a href="https://bookstore.ams.org/gsm-94/">Representations of Semisimple Lie Algebras in the BGG Category \(\mathcal{O}\)</a></cite></li>
+      </ul>
+
+      <p>and then branch out to other topics relating to category \(\mathcal{O}\) once we have gone over the fundamentals. A more detailed plan for the seminar is <a href="s20-category-o/outline.pdf">available here (PDF)</a>.</p>
+
+      <p>Please email Cailan at <a id="email">ccl at math dot columbia dot edu</a> if you would like to join the seminar.</p>
+      <script>
+        email = document.getElementById("email").innerHTML;
+        email = email.replace(/ at /g, "@");
+        email = email.replace(/ dot /g, ".");
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("email").setAttribute("href", "mailto:" + email);
+      </script>
+
+      <h3>Rules for the seminar</h3>
+
+      <ol>
+        <li>You must have an example/computation in \(\mathfrak{sl}_2\) or \(\mathfrak{sl}_3\) in your talk.</li>
+        <li>You cannot give a slides talk unless your talk does not have an example/computation in \(\mathfrak{sl}_2\) or \(\mathfrak{sl}_3\).</li>
+        <li>Turn your video on (for the most part) as a courtesy to the speaker.</li>
+        <li>There are no dumb questions.</li>
+      </ol>
+
+      <p>Please send your title and abstract to Cailan by Wednesday night, and your notes to Henry before your talk starts. If by some miracle you have your notes written and talk prepared by the end of Wednesday, you can include the notes in your email to Cailan.</p>
+
+      <h3>Schedule</h3>
+
+      <table>
+        <colgroup>
+          <col span="1" style="width: 75px;">
+          <col span="1">
+        </colgroup>
+
+        <tbody>
+          <tr>
+            <td>Fri Jul 17</td>
+            <td>
+              <strong>Organizational meeting</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Jul 24</td>
+            <td>
+              Dinushi Munasinghe<br/>
+              <cite>Category O: Properties</cite><br/><br/>
+              
+              We will begin by defining the BGG Category \(\mathcal{O}\) and giving some basic properties. We will define highest weight modules, show that they are in \(\mathcal{O}\), and prove that they are indecomposable. We will then introduce the central characters, the dot action and the Harish-Chandra homomorphism to prove that \(\mathcal{O}\) is of finite length. Finally, we will introduce the subcategories \(\mathcal{O}_{\chi}\) and show that \(\mathcal{O}_{\chi_\lambda}\) is a block of \(\mathcal{O}\) for integral \(\lambda\).<br/><br/>
+
+              Notes: <a href="s20-category-o/dinushi-notes.pdf">here (PDF)</a><br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Jul 31</td>
+            <td>
+              Cailan Li<br/>
+              <cite>Category O: Methods</cite><br/><br/>
+              
+              We first leisurely compute some Ext groups between our favorite objects in Category \(\mathcal{O}\). Afterwards, we will introduce a self duality functor on Category \(\mathcal{O}\) and compute some examples. Finally we will introduce standard filtrations on modules in Category \(\mathcal{O}\) and show that the multiplicity of a Verma module in a standard filtration of a module can be computed in terms of the duality functor introduced before. Time permmiting, we will introduce \(\rho\)-dominant weights and show Category \(\mathcal{O}\) has enough projectives.<br/><br/>
+
+              Notes: <a href="s20-category-o/cailan-notes.pdf">here (PDF)</a><br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Aug 07, <strong>3:30pm EDT</strong></td>
+            <td>
+              Cailan Li<br/>
+              <cite>Category O: Methods (Part II)</cite><br/><br/>
+              
+              We begin by answering all your questions. We then introduce standard filtrations on modules in Category \(\mathcal{O}\), show basic properties and sketch how the multiplicities of a Verma module in a standard filtration of a module is related to the duality functor. We will then explain some technical details about \(\rho\)-dominant weights and finally show Category \(\mathcal{O}\) has <u>some</u> projectives. <br/><br/>
+
+              Notes: <a href="s20-category-o/cailan-notes.pdf">here (PDF)</a><br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Aug 14</td>
+            <td>
+              <strong>No seminar</strong> (due to QUACKS)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Aug 21</td>
+            <td>
+              Jin-Cheng Guu<br/>
+              <cite>Projectives in Category \(\mathcal{O}\)</cite><br/><br/>
+              
+              <ol>
+                <li>Set up the some prerequisites: abundance of projectives, classification of projective covers, and their standard filtrations.</li>
+                <li>Cut right into BGG reciprocity, prove it, and apply it to the case of \(\mathfrak{g}=\mathfrak{sl}_2.\)</li>
+                <li>Break down category O into categories of modules of finite dimensional algebra.</li>
+                <li>Talk a bit about contravariant forms, if time permits.</li>
+              </ol>
+
+              Notes: TBA<br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Aug 28</td>
+            <td>
+              Mrudul Thatte<br/>
+              <cite>Verma's Thesis</cite><br/><br/>
+              
+              We will introduce contravariant forms and establish their existence and uniqueness (up to scaling) on highest weight modules. Then we will discuss various features of Verma modules including: simple submodules, homomorphisms, simplicity criterion, embeddings. This will help us analyze the composition factors of Verma modules and allow us to decompose Category \(\mathcal{O}\) into blocks indexed by \(\rho\)-antidominant weights. Time permitting, we will discuss how an error in Verma's thesis implies that all composition factors appear with multiplicity 1.<br/><br/>
+
+              Notes: <a href="s20-category-o/mrudul-notes.pdf">here (PDF)</a><br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Sep 04</td>
+            <td>
+              &Aacute;lvaro Mart&iacute;nez<br/>
+              <cite>Jantzen's Thesis</cite><br/><br/>
+              
+              The embeddings \(M(s_\alpha\bullet \lambda) \hookrightarrow M(\lambda)\) from last time give us sufficient conditions for \([M(\lambda):L(\mu)]\neq 0\). We will start by stating the BGG Theorem, which determines exactly for which \(\mu\) this multiplicity is nonzero. This will be motivation for Jantzen’s Filtration Theorem, of which the BGG Theorem is a corollary. As another application, we will determine the exact multiplicities for the \(\mathfrak{sl}_3(\mathbb{C})\) case for all \(\lambda\) integral and dot-regular. Finally we will prove Jantzen’s Filtration Theorem modulo Shapovalov’s formula.<br/><br/>
+
+              Notes: <a href="s20-category-o/alvaro-notes.pdf">here (PDF)</a><br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Sep 11</td>
+            <td>
+              Micah Gay<br/>
+              <cite>BGG resolution</cite><br/><br/>
+              
+              This week we will discuss topics relating to BGG resolutions, including:
+              <ol>
+                <li>What is a BGG resolution</li>
+                <li>How we can construct them</li>
+                <li>Weak and strong resolutions</li>
+                <li>What they tell us about extensions</li>
+                <li>Bott’s theorem as a consequence of the BGG resolution</li>
+              </ol>
+
+              Notes: <a href="s20-category-o/micah-notes.pdf">here (PDF)</a><br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Sep 18</td>
+            <td>
+              Nikolay Grantcharov<BR/>
+              <cite>Translation functors in category O</cite><br/><br/>
+              
+              Translation functors are defined by tensoring with a finite dimensional \(\mathfrak{g}\)-representation and then projecting to a block. Our goal is to describe how these functors act on integral blocks. We show they provide an equivalence of categories between all regular integral blocks, and then describe the result of translating from regular integral blocks to blocks parameterized by weights lying on walls.<br/><br/>
+
+              Notes: <a href="s20-category-o/nikolay-notes.pdf">here (PDF)</a><br/>
+              References: [H]
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Sep 27</td>
+            <td>
+              <strong>No seminar</strong> (break)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Oct 02</td>
+            <td>
+              <strong>No seminar</strong> (break)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Oct 09</td>
+            <td>
+              Jin-Cheng Guu<BR/>
+              <cite>The Kazhdan Lusztig Conjectures</cite><br/><br/>
+              
+              We've been seeing two important building blocks of the category \(\mathcal{O}\), namely the Verma modules \(M\) and the simple modules \(L\). In the Grothedieck ring, both of them form a basis, so we naturally want to know how the change of basis matrix looks like. It turns out that the entries can be expressed in terms of a set of mysterious polynomials, the Kazhdan-Lusztig polynomials. In this talk, we will see what they are, and sketch a proof of the fact above.<br/><br/>
+
+              Notes: <a href="s20-category-o/jin-notes2.pdf">here (PDF)</a><br/>
+              References: Yi Sun's notes <a href="https://yisun.io/notes/klconj.pdf">Perverse sheaves and the Kazhdan-Lusztig conjectures</a> 
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Oct 16</td>
+            <td>
+              Cailan Li<BR/>
+              <cite>What makes a Sheaf Perverse, Part II</cite><br/><br/>
+              
+              We begin by reviewing some notions from Part I and then give the definition of a perverse sheaf (for real this time). After giving some examples, we then introduce Bott-Samelson varieties and show how using the decomposition theorem, you too can categorify the Hecke Algebra. Time permmiting, we might say a few words on Lusztig's canonical basis.<br/><br/>
+
+              Notes: <a href="s20-category-o/cailan-notes2-part1.pdf">Part 1 (PDF)</a>, <a href="s20-category-o/cailan-notes2-part2.pdf">Part 2 (PDF)</a><br/>
+              References:
+              <ul>
+                <li>B. Elias, S. Makisumi, U. Thiel, and G. Williamson, <a href="https://www.springer.com/gp/book/9783030488253">Introduction to Soergel Bimodules</a> (chapter 16)</li>
+                <li>Dimca, Alexandru, <a href="https://www.springer.com/gp/book/9783540206651">Sheaves in Topology</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Oct 23</td>
+            <td>
+              Henry Liu<BR/>
+              <cite>Category O for quantum affine algebras</cite><br/><br/>
+              
+              This will be an overview of some known aspects of the representation theory of quantum affine algebras, with \(U_q(\hat{\mathfrak{sl}}_2)\) as the main (but certainly not representative) example. I'll try to explain how cluster algebras show up in this setting &mdash; another example of categorification.<br/><br/>
+
+              Notes: <a href="s20-category-o/henry-notes.pdf">here (PDF)</a><br/>
+              References:
+              <ul>
+                <li>D. Hernandez, B. Leclerc. <a href="https://arxiv.org/abs/1902.01432">Quantum affine algebras and cluster algebras</a>.</li>
+                <li>L. Williams. <a href="https://arxiv.org/abs/1212.6263">Cluster algebras: an introduction</a>.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Oct 30</td>
+            <td>
+              &Aacute;lvaro Mart&iacute;nez<BR/>
+              <cite>The char \(p\) story</cite><br/><br/>
+              
+              We will motivate the (in many ways, parallel) study of representations of reductive algebraic groups over characteristic \(p\) and describe some of its main features, as well as their connection to the modular representation theory of finite groups. The main examples will be \(\mathrm{SL}_2\) and \(\mathrm{SL}_3\).<br/><br/>
+
+              Notes: <a href="s20-category-o/alvaro-notes2.pdf">here (PDF)</a><br/>
+              References: in last slide of notes.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Nov 06</td>
+            <td>
+              Mikhail Khovanov<BR/>
+              <cite>Category O and categorification of Lie algebra representations</cite><br/><br/>
+              
+              We'll go over an old paper by Bernstein, I. Frenkel and Khovanov on categorification of commuting actions of \(\mathfrak{sl}(2)\) and the Temperley-Lieb algebra via projective and Zuckerman functors on maximal parabolic and singular blocks of category O for \(\mathfrak{gl}(n)\). We'll also explain how to view these constructions in the modern setup, 20 years later.<br/><br/>
+
+              Notes: <a href="s20-category-o/mikhail-notes.pdf">here (PDF)</a><br/>
+              References: <a href="https://arxiv.org/abs/math/0002087">[BFK00]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Nov 13</td>
+            <td>
+              Mikhail Khovanov<BR/>
+              <cite>Category O and categorification of Lie algebra representations (part 2)</cite><br/><br/>
+              
+              We'll go over an old paper by Bernstein, I. Frenkel and Khovanov on categorification of commuting actions of \(\mathfrak{sl}(2)\) and the Temperley-Lieb algebra via projective and Zuckerman functors on maximal parabolic and singular blocks of category O for \(\mathfrak{gl}(n)\). We'll also explain how to view these constructions in the modern setup, 20 years later.<br/><br/>
+
+              Notes: <a href="s20-category-o/mikhail-notes-part2.pdf">here (PDF)</a><br/>
+              References: <a href="https://arxiv.org/abs/math/0002087">[BFK00]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>Sun Nov 22, 11:40am ET</strong></td>
+            <td>
+              Maithreya Sitaraman<BR/>
+              <cite>Three perspectives on Borel-Weil-Bott</cite><br/><br/>
+              
+              Borel-Weil-Bott can be approached from three very different perspectives: (1) the algebraic geometric perspective (2) The category O perspective and (3) The differential geometric (Chevalley-Eilenberg) perspective. In this talk, we will examine how all these different perspectives are used to deduce the same thing, and we will thereby appreciate the interconnectedness of mathematics.<br/><br/>
+
+              Notes: TBA<br/>
+              References: TBA
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Nov 27</td>
+            <td>
+              <strong>No seminar</strong> (Thanksgiving)
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Dec 04</td>
+            <td>
+              Henry Liu<BR/>
+              <cite>Geometric representation theory of quantum affine algebras</cite><br/><br/>
+              
+              This will be a retelling of my previous talk from a geometric perspective. Namely, we'll go over Nakajima's seminal works studying the category of finite-dimensional modules for quantum affine algebras using the (K-theoretic) geometry of Nakajima quiver varieties. This framework can be viewed as a far-reaching generalization of classical Kazhdan-Lusztig theory.<br/><br/>
+
+              Notes: <a href="s20-category-o/henry-notes2.pdf">here (PDF)</a><br/>
+              References: Nakajima's papers
+              <ul>
+                <li><a href="https://www.ams.org/journals/jams/2001-14-01/S0894-0347-00-00353-2/S0894-0347-00-00353-2.pdf">Quiver varieties and finite-dimensional representations of quantum affine algebras</a></li>
+                <li><a href="https://annals.math.princeton.edu/wp-content/uploads/annals-v160-n3-p05.pdf">Quiver varieties and t-analogs of q-characters of quantum affine algebras</a></li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Fri Dec 11</td>
+            <td>
+              Mikhail Khovanov<BR/>
+              <cite>Highest weight categories and categorification of quantum groups</cite><br/><br/>
+              
+              We'll explain how categorification of quantum group naturally emerges from highest weight categories and discuss the basics of categorified quantum groups.<br/><br/>
+
+              Notes: <a href="s20-category-o/mikhail-notes-part3.pdf">here (PDF)</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </article>
+  </div>
+</body>
+</html>
